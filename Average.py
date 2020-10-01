@@ -1,4 +1,4 @@
-#Initialize all variables to 0
+ #Initialize all variables to 0
 numberofscores = 0
 total = 0
 score = 0
@@ -9,11 +9,10 @@ average = 0.0
 numberofscores = int (input ("please enter the number of scores you want to average: "))
 
 #Add a loop to make this code repeat until scorecount = numberofscores
-score = int (input("please enter a score:"))
-total = total + score
-scorecount = scorecount + 1
-
-
-
-average = total / numberofscores
-print (average)  
+while scorecount<numberofscores:
+    score = int (input("please enter a score:"))
+    total = total + score
+    scorecount = scorecount + 1
+    average = total / numberofscores
+    print ("The average number of scores is: " )
+    print (average)  
